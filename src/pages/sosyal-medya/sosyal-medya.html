@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar color="light">
+    <ion-title>GALERİ</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+    <ion-content class="bg">
+        <ion-slides class="image-slider" loop="true">
+          <ion-slide *ngFor="let img of images">
+            <img src="assets/imgs/{{img}}" class="thumb-img" imageViewer>
+          </ion-slide>
+        </ion-slides>
+    </ion-content>
+

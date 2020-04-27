@@ -1,0 +1,137 @@
+<ion-nav [root]="rootPage"></ion-nav>
+
+<ion-menu [content]="content">
+        <ion-header>
+          <ion-toolbar color="light">
+            <ion-title>MENÜ</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+              <button ion-item (click)="haberler()">
+                HABERLER
+              </button>
+              <button ion-item (click)="takimlarPage()">
+                TAKIMLAR
+              </button>
+              <button ion-item (click)=macMerkezi()>
+                MAÇ MERKEZİ
+              </button>
+              <button ion-item (click)="fikstur()">
+                FİKSTÜR
+              </button>
+              <button ion-item (click)="puanDurumu()">
+                PUAN DURUMU
+              </button>
+              <button ion-item (click)="sosyalMedya()">
+                GALERİ
+              </button>
+            </ion-list>
+          </ion-content>
+
+      </ion-menu>
+      
+      <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+
+<ion-header>
+    <ion-navbar color="light">
+    <ion-title>
+          <button name="baslik" ion-button icon-only menuToggle>
+           <ion-icon name="menu"></ion-icon>FANATİK</button>     
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="anasayfa()">
+        <ion-icon name="home">
+        </ion-icon>
+      </button>
+    </ion-buttons>
+    </ion-navbar>
+    </ion-header>
+
+    
+<ion-content text-center padding class="bg-image">
+    <ion-icon name="ios-battery-full-outline"></ion-icon>
+    <p>{{stat?.level}}</p>
+
+    <h4>Şarj Durumu:</h4><br>
+    <p>{{stat?.isPlugged}}</p>
+  <br>
+<section text-center margin-bottom>
+  <ion-icon name="contact"></ion-icon>
+  <h2 style="font-size:1.4em" no margin>HOŞGELDİNİZ</h2>
+  <h4>Sayın Kullanıcı</h4>
+</section>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col col-6>
+      <ion-card text-center padding color="light">
+        <button colors="primary" (tap)="haberler()">
+        <ion-icon name="paper"></ion-icon>
+        <h2>HABERLER</h2>
+      </button>
+      </ion-card>
+    
+    </ion-col>
+
+    <ion-col col-6>
+        <ion-card text-center padding color="light">
+            <button colors="primary" (tap)="takimlarPage()">
+          <ion-icon name="football"></ion-icon>
+          <h2>TAKIMLAR</h2>
+            </button>
+        </ion-card>
+      </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+      <ion-col col-6>
+        <ion-card text-center padding color="light">
+            <button colors="primary" (tap)="macMerkezi()">
+          <ion-icon name="notifications"></ion-icon>
+          <h2>MAÇ MERKEZİ</h2>
+            </button>
+        </ion-card>
+      </ion-col>
+  
+      <ion-col col-6>
+          <ion-card text-center padding color="light">
+              <button colors="primary" (tap)="fikstur()">
+            <ion-icon  name="list-box"></ion-icon>
+            <h2>FİKSTÜR</h2>
+              </button>
+          </ion-card>
+        </ion-col>
+  
+    </ion-row>
+
+    <ion-row>
+        <ion-col col-6>
+          <ion-card text-center padding color="light">
+              <button color1=white (tap)="puanDurumu()">
+            <ion-icon name="stats"></ion-icon>
+            <h2>PUAN DURUMU</h2>
+              </button>
+          </ion-card>
+        </ion-col>
+    
+        <ion-col col-6>
+            <ion-card text-center padding color="light">
+                <button color1=white (tap)="sosyalMedya()">
+              <ion-icon name="images"></ion-icon>
+              <h2>GALERİ</h2>
+                </button>
+            </ion-card>
+          </ion-col>
+    
+      </ion-row>
+
+
+
+</ion-grid>
+
+</ion-content>

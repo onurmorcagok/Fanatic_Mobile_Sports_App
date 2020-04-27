@@ -1,0 +1,22 @@
+page-home {
+    ion-icon {
+        font-size: 5em;
+       // color1:#488aff;
+       // color2:white;
+    }
+
+    .bg-image{
+        background-image:url('../assets/imgs/arkaPlan.jpg');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+    }
+
+    ion-slide.swiper-slide{
+        left:10;
+    }
+
+    .renk{
+        font-color:white;
+    }
+}

@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar color="light">
+    <ion-title>HABERLER</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card *ngFor="let article of data?.articles">
+
+    <img [src]="article.urlToImage">
+
+  <ion-card-content>
+    <ion-card-title>{{article.title}}</ion-card-title>
+
+    <p>{{article.description}}</p>
+
+  </ion-card-content>
+  </ion-card>
+
+</ion-content>
